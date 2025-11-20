@@ -76,7 +76,7 @@ namespace Ucu.Poo.Cars
 
             for (int i = 0; i < 4; i++)
             {
-                faultyCount += this.Wheels[i].CountFaultySensors();
+                faultyCount += this.wheels[i].CountFaultySensors();
             }
 
             return faultyCount;
