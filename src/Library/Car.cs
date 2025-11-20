@@ -72,14 +72,12 @@ namespace Ucu.Poo.Cars
         {
             int faultyCount = 0;
 
-            faultyCount += this.Engine.CountFaultySensors();
+            faultyCount += this.Engine.CountFaultySensors(); // En esta función también se incluye el CountFaultySensors de OilPump
 
             for (int i = 0; i < 4; i++)
             {
                 faultyCount += this.Wheels[i].CountFaultySensors();
             }
-
-            faultyCount += this.Engine.OilPump.CountFaultySensors();
 
             return faultyCount;
         }

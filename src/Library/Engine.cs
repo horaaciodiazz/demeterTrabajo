@@ -42,6 +42,8 @@ namespace Ucu.Poo.Cars
                 }
             }
 
+            faultyCount += this.OilPump.CountFaultySensors();
+
             return faultyCount;
         }
     }
